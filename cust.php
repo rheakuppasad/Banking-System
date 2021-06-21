@@ -12,7 +12,7 @@
 		$sql2 = "UPDATE customer SET cur_bal = cur_bal + $amount WHERE cust_id = $to_cust_id";
 		$sql3 = "INSERT INTO transfer (from_cust, to_cust, amt_transferred) VALUES ($from_cust_id, $to_cust_id, $amount)";
 		$result = mysqli_query($con, $sql1) or die('Error 1');
-		$result = mysqli_query($con, $sql1) or die('Error 2');
+		$result = mysqli_query($con, $sql2) or die('Error 2');
 		$result = mysqli_query($con, $sql3) or die('Error 3');
 		header('Location:okay_pg.php');
 		
