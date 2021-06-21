@@ -38,5 +38,5 @@
 		<center>
 			<button type="button" class="btn btn-light btn-lg"><a href="all_cust.php">View all customers</a></button>
 		</center>
-		</body>
+	</body>
 </html>
